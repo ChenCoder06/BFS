@@ -7,10 +7,11 @@ int dx[12] = {-2,-2,-1,1,2,2,2,2,1,-1,-2,-2},
 
 int main()
 {
-    int s[101][101],quene[1000][4] = {0},x1,y1,x2,y2;
+    int s[101][101],quene[10000][4] = {0},x1,y1,x2,y2;
     memset(s,-1,sizeof(s));
     int head=1,tail=1;
     quene[1][1] = 1,quene[1][2]=1,quene[1][3] = 0;
+    s[1][1] = 0;
     std::cin >> x1 >> y1 >> x2 >> y2;
     while(head<=tail)
     {
@@ -18,7 +19,7 @@ int main()
         {
             int x = quene[head][1] + dx[i];
             int y = quene[head][2] + dy[i];
-            if(x>0 && y>0)
+            if(x>0 && y>0 && x<=100 && y<=100)
             {
                 if(s[x][y]==-1)
                 {
