@@ -1,0 +1,11 @@
+"background.enabled": true,
+"background.fullscreen": {
+    "images": [
+        "file:///E:/图片/你的壁纸.jpg"
+    ],
+    "opacity": 0.85,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": false
+}
